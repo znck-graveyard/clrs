@@ -1,0 +1,5 @@
+10
+9 8 7 6 5 4 3 2 1 0
+
+Line 1: Number of elements in the array 
+Line 2: Elements of the array

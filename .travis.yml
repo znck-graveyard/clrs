@@ -1,0 +1,11 @@
+# Have to set one.
+language: python
+
+install:
+  ./scripts/install.sh
+
+script:
+  ./scripts/run.sh
+
+notifications:
+  email: false
