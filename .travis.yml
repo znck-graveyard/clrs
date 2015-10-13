@@ -1,13 +1,13 @@
 # Have to set one.
 language: python
 
-sudo: required
-
-install:
-  ./scripts/install.sh
-
 script:
   ./scripts/run.sh
 
 notifications:
   email: false
+
+addons:
+  apt:
+    packages:
+    - g++
