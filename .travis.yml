@@ -1,6 +1,8 @@
 # Have to set one.
 language: python
 
+sudo: false
+
 script:
   ./scripts/run.sh
 
