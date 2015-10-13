@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 echo "Testing CRLS c++ code"
 # Create temporary directory
