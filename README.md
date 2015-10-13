@@ -1,5 +1,5 @@
-# CRLS [![Build Status](https://travis-ci.org/znck/crls.svg)](https://travis-ci.org/znck/crls)
-Implementation of CRLS algorithms in every language.
+# CLRS [![Build Status](https://travis-ci.org/znck/clrs.svg)](https://travis-ci.org/znck/clrs)
+Implementation of CLRS algorithms in every language.
 
 ### Contribution Guidelines:
 - Source files are arranged in folders as per chapter number.
