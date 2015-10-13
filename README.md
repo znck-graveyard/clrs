@@ -9,7 +9,7 @@ Implementation of CLRS algorithms in every language.
 
   ```c++
   /*
-   * Insertion Sort, Page 18 (CRLS section 2.1)
+   * Insertion Sort, Page 18 (CLRS section 2.1)
    * @author Rahul Kadyan
    */
    ```
