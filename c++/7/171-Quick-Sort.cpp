@@ -1,5 +1,5 @@
 /*
- * Quick Sort, Page 160 (CLRS section 6.4)
+ * Quick Sort, Page 171 (CLRS section 7.1)
  * @author Anup Agarwal
  */
 
