@@ -11,3 +11,5 @@
    * @author Rahul Kadyan
    */
    ```
+- Add test cases in `tests` directory. eg. for `/2/18-insertion-sort.cpp`, `/2/18-insertion-sort.py` or `/2/18-insertion-sort.*` have their test cases in `/tests/2/18-insertion-sort/` directory.
+- Test case format: Input in `input.txt` and results in `output.txt`
