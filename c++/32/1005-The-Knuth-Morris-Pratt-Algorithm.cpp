@@ -2,10 +2,10 @@
  * The Knuth Morris Pratt Algorithm, Page 1005 (CLRS section 32.4)
  * @author Anup Agarwal
  */
-
 #include <iostream>
 #include <string>
 #include <vector>
+#include <stdio.h>
 
 using namespace std;
 
@@ -35,22 +35,23 @@ void match(string &pattern,string &given, vector<int> prefix){
                 j++;i++;
             }
         }
-        if(j>=pattern.length()){
-            cout<<k<<" ";
+        if(j>=pattern.length()){ //Match Found
+            printf("Pattern Found at Given Array Index %d \n",k);
             k = i-prefix[j-1];
+            j = prefix[j-1];
         }
-
-        if(j!=0){
-            i = i-prefix[j-1];
+        else if(j!=pattern.length()&&prefix[j]!=0){ //Possible Match In Current Comparision
+            k = i-prefix[j-1];
+            j = prefix[j-1];
         }
-        else
+        else{ //No Possible Match Shift whole pattern
             i++;
-        j = 0;
+            j = 0;
+        }
     }
 
 }
 
-//Test Case
 int main()
 {
 
@@ -59,15 +60,6 @@ int main()
 
     vector<int> prefix(pattern.size());
     buildprefix(prefix,pattern);
-
-    vector<int>::iterator v=prefix.begin();
-
-    while(v!=prefix.end()){
-        cout<<*v;
-        v++;
-    }
-    cout<<endl;
-
     match(pattern,given,prefix);
 
     return 0;
